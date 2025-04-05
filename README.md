@@ -49,6 +49,7 @@ python3 federated_eeg_LOSO_DA.py --model=cnn --dataset=seed --target_id=10 --num
 ```
 
 ## BibTeX
+If you find our paper / code helpful, please consider citing our work:
 ```
 @inproceedings{liu2025mixeeg,
   title={mix{EEG}: Enhancing {EEG} Federated Learning for Cross-subject {EEG} Classification with Tailored mixup},
@@ -59,4 +60,4 @@ python3 federated_eeg_LOSO_DA.py --model=cnn --dataset=seed --target_id=10 --num
 ```
 
 ## Acknowledgement
-This code is modified based on the FedAvg code from [This repo](https://github.com/zj-jayzhang/FedAvg).
+This code is modified from this [FedAvg Code Repo](https://github.com/zj-jayzhang/FedAvg).
