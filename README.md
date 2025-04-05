@@ -1,5 +1,5 @@
 # mixEEG (CogSci 25)
-🔥 Our paper **mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup** has officially been accepted as CogSci 25 for Oral presentation (13.8%).
+🔥 Our paper **mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup** has officially been accepted as CogSci 25 for Oral presentation.
 
 📝 For the first time, we investigate the cross-subject EEG classification in the FL setting, including the DG FL and DA FL settings.
 
