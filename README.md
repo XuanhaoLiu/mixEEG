@@ -1,31 +1,28 @@
 # mixEEG (CogSci 25)
 🔥 Our paper **mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup** has officially been accepted as CogSci 25 for Oral presentation (13.8%).
 
+📝 For the first time, we investigate the cross-subject EEG classification in the FL setting, including the DG FL and DA FL settings.
+
+🛠️ In this paper, we propose a simple yet effective framework termed **mixEEG**. Specifically, we tailor the vanilla _mixup_ considering the unique properties of the EEG modality.
+mixEEG shares the unlabeled averaged data of the unseen subject rather than simply sharing raw data under the domain adaptation setting, thus better preserving privacy and offering an averaged label as a pseudo-label.
+
 ![mixeeg](figure.png)
 
 ## How to run our code
 
 At first, you should creat two dirs called 'logs' and 'checkpoints', then you can cd into 'src', and run mixEEG:
 
-1. --model is the model type, it can be mlp or cnn.
-
-2. --dataset is the dataset, it can be seed or chbmit.
-   
-4. --frac is the fraction for updating local model, it can be 0.1 to 1.
-
-5. --iid is Independent and identically distributed, in our paper is always 1.
-
-6. --epochs is the global updating round.
-
-7. --lr is the learning rate for the local model.
-
-8. --mixup_strategy is the strategy for mixup, it can be "none" for the vanilla FedAvg, "lin" for linear mixup, "cha" for channel mixup, and "fre" for frequency mixup.
-
-9. --mixup_alpha is useful only under the linear mixup mode.
-
-10. --mixup_subtype is the subtype of each mixup strategy, the meanings are the same as the paper.
-
-11. --gpu is the GPU id.
+Here is an explanation of some parameters,
+1. `--model`: model architecture to be used, (e.g., `mlp` or `cnn`).
+2. `--dataset`: name of the datasets, (e.g., `seed` or `chbmit`).
+4. `--frac`: fraction of clients to be ramdonly sampled at each round, (e.g., `0.2` or `1.0`).
+5. `--iid`: IID or non-IID partition strategy, in our paper is always 1.
+6. `--epochs`: the number of total communication rounds. (default: `100`)
+7. `--lr`: the initial learning rate for local training (default: `0.01`)
+8. `--mixup_strategy`: the strategy for mixup, `none` for the vanilla FedAvg, `lin` for linear mixup, `cha` for channel mixup, and `fre` for frequency mixup.
+9. `--mixup_alpha`: useful only under the linear mixup mode. (e.g., `0.2` or `1.0`).
+10. `--mixup_subtype`: the subtype of each mixup strategy, the meanings are the same as the paper. (e.g., `random`, `cross`, `cut` or `binary`).
+11. `--gpu`: the GPU id to be used, it depends on your machine. (default: `0`)
 
 **the DG FL settings:**
 ```shell
