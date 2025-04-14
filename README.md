@@ -1,5 +1,5 @@
 # mixEEG (CogSci 25)
-🔥 Our paper **mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup** has officially been accepted as CogSci 25 for Oral presentation.
+🔥 Our paper [mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup](https://arxiv.org/abs/2504.07987) has officially been accepted as CogSci 25 for Oral presentation.
 
 📝 For the first time, we investigate the cross-subject EEG classification in the FL setting, including the DG FL and DA FL settings.
 
@@ -8,7 +8,7 @@ mixEEG shares the unlabeled averaged data of the unseen subject rather than simp
 
 ![mixeeg](figure.png)
 
-## How to run our code
+## How to run our code?
 
 At first, you should creat two dirs called 'logs' and 'checkpoints', then you can cd into 'src', and run mixEEG:
 
@@ -60,4 +60,4 @@ If you find our paper / code helpful, please consider citing our work:
 ```
 
 ## Acknowledgement
-This code is modified from this [FedAvg Code Repo](https://github.com/zj-jayzhang/FedAvg).
+This code is built based on this [FedAvg Code Repo](https://github.com/zj-jayzhang/FedAvg).
