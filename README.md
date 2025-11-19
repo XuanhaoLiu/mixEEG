@@ -1,5 +1,5 @@
 # mixEEG (CogSci 2025) [![arxiv](https://img.shields.io/badge/Arxiv-2504.07987-red)](https://arxiv.org/abs/2504.07987)
-🔥 Our paper [mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup](https://arxiv.org/abs/2504.07987) has officially been accepted as CogSci 2025 for Oral presentation.
+🔥 Our paper [mixEEG: Enhancing EEG Federated Learning for Cross-subject EEG Classification with Tailored mixup](https://escholarship.org/uc/item/0t123879) has officially been accepted as CogSci 2025 for Oral presentation.
 
 📝 For the first time, we investigate the cross-subject EEG classification in the FL setting, including the DG FL and DA FL settings.
 
